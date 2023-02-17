@@ -11,4 +11,7 @@ public class RestApiController {
         return "getList Method";
     }
 
+    @GetMapping
+    public String getAdd() {return "getAdd Method";}
+
 }
