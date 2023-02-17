@@ -10,5 +10,6 @@ public class RestApiController {
     public String getList(){
         return "getList Method";
     }
+    public String getInfo() {return "getInfo";}
 
 }
