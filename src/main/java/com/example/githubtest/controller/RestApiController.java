@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class RestApiController {
 
+    private String ipAddr = "127.0.0.1";
+
     @GetMapping(value = "/getList")
     public String getList(){
         return "getList Method";
