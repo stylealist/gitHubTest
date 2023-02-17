@@ -17,4 +17,8 @@ public class RestApiController {
     @GetMapping(value = "/getClone")
     public String getClone() {return  "getClone";}
 
+    @GetMapping(value = "getIpAddr")
+    public String getIpAddr() {
+        return ipAddr;
+    }
 }
