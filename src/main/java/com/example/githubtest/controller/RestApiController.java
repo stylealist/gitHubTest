@@ -7,15 +7,16 @@ import org.springframework.web.bind.annotation.RestController;
 public class RestApiController {
 
     private String ipAddr = "127.0.0.1";
+    private String port = "80";
 
     @GetMapping(value = "/getList")
     public String getList(){
         return "getList Method";
     }
     @GetMapping(value = "/getInfo")
-    public String getInfo() {return "getInfo";}
+    public String getInfo() { return "getInfo"; }
     @GetMapping(value = "/getClone")
-    public String getClone() {return  "getClone";}
+    public String getClone() { return  "getClone"; }
 
     @GetMapping(value = "getIpAddr")
     public String getIpAddr() {
