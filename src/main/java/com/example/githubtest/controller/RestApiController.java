@@ -10,7 +10,10 @@ public class RestApiController {
     public String getList(){
         return "getList Method";
     }
+    @GetMapping(value = "/getInfo")
     public String getInfo() {return "getInfo";}
+    @GetMapping(value = "/getClone")
+    public String getClone() {return  "getClone";}
 
     @GetMapping(value = "getAdd")
     public String getAdd() {return "getAdd Method";}
