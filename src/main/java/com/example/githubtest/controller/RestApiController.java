@@ -24,4 +24,8 @@ public class RestApiController {
     public String getFetch() {return "getFetch Method";}
 
 
+    @GetMapping(value = "getIpAddr")
+    public String getIpAddr() {
+        return ipAddr;
+    }
 }
